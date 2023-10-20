@@ -1,0 +1,23 @@
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(10,1fr);  
+    grid-template-rows: 50px 200px 100px;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer"
+    ;
+}
+:nth-child(1){
+    grid-area: togglogo;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
